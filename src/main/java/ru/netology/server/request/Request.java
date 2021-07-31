@@ -42,7 +42,7 @@ public class Request {
     }
 
     public static Request fromRequestLine(String requestLine) throws IllegalArgumentException {
-        String[] requestLineParts = requestLine.split("\s+");
+        String[] requestLineParts = requestLine.split("\\s+");
         if (requestLineParts.length != 3) {
             throw new IllegalArgumentException();
         }
